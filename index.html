@@ -2,261 +2,178 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Krishna Dhanuk | Mechanical Engineer</title>
+    <title>Krishna Dhanuk | Engineering Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
         body {
             font-family: 'Poppins', sans-serif;
-            background: #0f172a;
-            color: #f1f5f9;
+            margin: 0; 
+            padding: 0; 
+            background: #f9f9f9;
+            color: #111;
         }
-
-        header {
-            background: #0f172a;
-            position: fixed;
-            width: 100%;
+        nav {
+            background: #222;
+            padding: 10px 0;
+            position: sticky;
             top: 0;
-            left: 0;
-            padding: 20px 10%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
+            width: 100%;
+            z-index: 10;
         }
-
-        header h1 {
-            color: #38bdf8;
-            font-size: 22px;
-        }
-
         nav a {
-            margin-left: 20px;
+            color: #fff;
+            margin: 0 15px;
             text-decoration: none;
-            color: #f1f5f9;
             font-weight: 500;
         }
-
         nav a:hover {
             color: #38bdf8;
         }
-
-        section {
-            padding: 100px 10%;
-            min-height: 100vh;
+        .section {
+            padding: 80px 10%;
         }
-
         .hero {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            text-align: center;
+            padding-top: 120px;
+            padding-bottom: 120px;
+            background: #38bdf8;
+            color: #fff;
         }
-
-        .hero h2 {
+        .hero h1 {
             font-size: 40px;
             margin-bottom: 10px;
         }
-
-        .hero span {
-            color: #38bdf8;
-        }
-
         .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 25px;
-            background: #38bdf8;
-            color: #0f172a;
-            border-radius: 5px;
+            padding: 10px 20px;
+            background: #fff;
+            color: #38bdf8;
             text-decoration: none;
             font-weight: 600;
+            border-radius: 4px;
+            margin-top: 20px;
+            display: inline-block;
         }
-
-        .section-title {
-            font-size: 32px;
-            margin-bottom: 30px;
-            color: #38bdf8;
-        }
-
         .card-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            margin-top: 30px;
         }
-
         .card {
-            background: #1e293b;
+            background: #fff;
             padding: 20px;
-            border-radius: 10px;
-            transition: 0.3s;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-
-        .card:hover {
-            transform: translateY(-5px);
-            background: #334155;
+        .card h3 {
+            margin-bottom: 10px;
         }
-
         footer {
+            background: #222;
+            color: #fff;
             text-align: center;
-            padding: 20px;
-            background: #1e293b;
+            padding: 15px 0;
         }
-
         input, textarea {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
-            border-radius: 5px;
-            border: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
-
         button {
             padding: 10px 20px;
             background: #38bdf8;
             border: none;
-            border-radius: 5px;
+            color: #fff;
             font-weight: 600;
+            border-radius: 4px;
             cursor: pointer;
-        }
-
-        @media (max-width: 768px) {
-            .hero h2 {
-                font-size: 28px;
-            }
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Krishna Dhanuk</h1>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#research">Research</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+<!-- NAVIGATION -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 <section class="hero">
-    <h2>Hello, I'm <span>Krishna Dhanuk</span></h2>
-    <p>Mechanical Engineering Student | Robotics & Control Systems Enthusiast | Research Driven</p>
-    <a href="#projects" class="btn">View My Work</a>
+    <h1>Hi, I'm <strong>Krishna Dhanuk</strong></h1>
+    <p>Mechanical Engineer | Robotics & Control Systems | Researcher</p>
+    <a class="btn" href="#projects">View Projects</a>
 </section>
 
 <!-- ABOUT -->
-<section id="about">
-    <h2 class="section-title">About Me</h2>
+<section id="about" class="section">
+    <h2>About Me</h2>
     <p>
-        I am a Mechanical Engineering undergraduate passionate about Robotics, Hydropower Systems,
-        Control Engineering, and R&D innovation. I actively work on real-world engineering problems,
-        research projects, and autonomous systems development.
+        I'm a Mechanical Engineering undergraduate at Tribhuvan University with a strong 
+        interest in robotics, hydropower systems, control systems modeling, and autonomous systems research.
     </p>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-    <h2 class="section-title">Projects</h2>
-    <div class="card-container">
-
-        <div class="card">
-            <h3>Upper Tamakoshi Hydropower (Educational Visit) </h3>
-            <p>
-                Conducted a detailed engineering study of surge chamber, penstock system, 
-                spiral casing, guide vanes, and turbine performance. Focused on hydraulic 
-                transients, energy transfer mechanisms, and efficiency optimization.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Heat Exchanger Digital Twin & Control Modeling (On-Going)</h3>
-            <p>
-               Working on it ! !
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>3D Data Classification</h3>
-            <p>
-                Based on the PointNet ++ Model and using the datasets of the ModelNet10.
-                I created a model that can classify the 3D Data.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>CanSat Research & Systems Design (SEDS)</h3>
-            <p>
-                Contributed to small satellite system design including structural 
-                configuration, payload integration, and descent control mechanisms 
-                for CanSat mission development.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>AUTOMATIC HAND SANITIZER USING A DRY FOGGER CIRCUIT</h3>
-            <p>
-                This project applies mathematical modeling of mechanical and thermal systems to develop an automated dry fogging hand sanitizer. 
-                Unlike traditional dispensers that require contact and waste liquid, 
-                this contactless system sprays sanitizer as a fine mist—reducing cross-contamination, 
-                minimizing skin irritation, and using less product economically with a simple, low-cost design.
-            </p>
-        </div>
-
-    </div>
-</section>
-
-<!-- RESEARCH -->
-<section id="research">
-    <h2 class="section-title">Research Interests</h2>
+<!-- SKILLS -->
+<section id="skills" class="section">
+    <h2>Skills</h2>
     <ul>
-        <li>Autonomous Robot Systems</li>
-        <li>Digital Twin</li>
-        <li>AI in Mechanical Engineering</li>
-        <li>Simulation and Energy</li>
-        <li>Surrogate Modeling</li>
+        <li>Mechanical Design & Analysis</li>
+        <li>Control Systems & MATLAB/Simulink</li>
+        <li>Robotics & Autonomous Systems</li>
+        <li>System Modeling & Simulation</li>
+        <li>Hydropower System Analysis</li>
+        <li>Python & Technical Computing</li>
     </ul>
 </section>
 
-<!-- RESUME -->
-<section id="resume">
-    <h2 class="section-title">Resume</h2>
-    <p>You can download my resume below:</p>
-    <a href="resume.pdf" class="btn" download>Download Resume</a>
+<!-- PROJECTS -->
+<section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Upper Tamakoshi Hydropower Analysis</h3>
+            <p>Technical hydraulic study focusing on surge chambers, penstock flow, turbine efficiency & optimization.</p>
+        </div>
+        <div class="card">
+            <h3>Heat Exchanger Digital Twin</h3>
+            <p>NTU-based thermal model with real-time feedback control simulation in MATLAB/Simulink.</p>
+        </div>
+        <div class="card">
+            <h3>Autonomous Mobile Robot</h3>
+            <p>Hardware + software co-design for navigation and control using sensor integration and feedback loops.</p>
+        </div>
+        <div class="card">
+            <h3>CanSat Systems Research</h3>
+            <p>Systems design contribution for SEDS CanSat project including descent control & payload integration.</p>
+        </div>
+    </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
-    <h2 class="section-title">Contact Me</h2>
-    <form onsubmit="return sendMessage()">
+<section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form onsubmit="alert('Thank you! Message received.'); return false;">
         <input type="text" placeholder="Your Name" required>
         <input type="email" placeholder="Your Email" required>
         <textarea rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+        <button type="submit">Send</button>
     </form>
 </section>
 
+<!-- FOOTER -->
 <footer>
-    <p>© 2026 Krishna Dhanuk | Mechanical Engineering Portfolio</p>
+    © 2026 Krishna Dhanuk Portfolio
 </footer>
-
-<script>
-    function sendMessage() {
-        alert("Thank you! Your message has been received.");
-        return false;
-    }
-</script>
 
 </body>
 </html>
