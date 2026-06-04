@@ -397,15 +397,17 @@ minimizing pressure losses and control effort.</p>
 <!-- CONTACT + SOCIAL LINKS ADDITION (icons prominently displayed) -->
 <section id="contact">
     <h2 class="section-title">Contact Me</h2>
-    <div class="contact-social-row">
-        <div class="contact-form">
-            <form onsubmit="return sendMessage()">
-                <input type="text" placeholder="Your Name" id="userName" required>
-                <input type="email" placeholder="Your Email" id="userEmail" required>
-                <textarea rows="5" placeholder="Your Message" id="userMsg" required></textarea>
-                <button type="submit"><i class="fas fa-paper-plane" style="margin-right: 6px;"></i> Send Message</button>
-            </form>
-        </div>
+<div class="contact-form">
+    <form action="https://formsubmit.co/dhanukkrishna0987@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://your-website.com/thankyou.html">
+        <input type="hidden" name="_subject" value="New Message from Krishna's Portfolio!">
+        <button type="submit"><i class="fas fa-paper-plane" style="margin-right: 6px;"></i> Send Message</button>
+    </form>
+</div>
         <div class="social-side">
             <h3><i class="fas fa-share-alt"></i> Connect with me</h3>
             <p style="margin-bottom: 15px;">Let's collaborate on research, engineering challenges, or just say hello!</p>
@@ -434,31 +436,6 @@ minimizing pressure losses and control effort.</p>
 </footer>
 
 <script>
-    function sendMessage() {
-        // Get form fields for optional validation / feedback
-        const name = document.getElementById('userName')?.value || '';
-        const email = document.getElementById('userEmail')?.value || '';
-        const message = document.getElementById('userMsg')?.value || '';
-        
-        if(name.trim() === '' || email.trim() === '' || message.trim() === '') {
-            alert("Please fill all fields before sending.");
-            return false;
-        }
-        
-        // Simple email format check
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if(!emailPattern.test(email)) {
-            alert("Please enter a valid email address.");
-            return false;
-        }
-        
-        alert(`Thank you ${name}! Your message has been received. I'll get back to you soon.`);
-        // Optionally reset form
-        document.getElementById('userName').value = '';
-        document.getElementById('userEmail').value = '';
-        document.getElementById('userMsg').value = '';
-        return false;   // prevent actual page reload
-    }
 
     // optional: smooth highlight for active nav section
     const sections = document.querySelectorAll('section');
@@ -479,6 +456,7 @@ minimizing pressure losses and control effort.</p>
             }
         });
     });
+    <input type="hidden" name="_next" value="https://your-website.com/thankyou.html">
 </script>
 </body>
 </html>
